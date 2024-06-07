@@ -1,0 +1,224 @@
+:root{
+    --eerie-black:#181828;
+    --gunmetal:#2A2A39;
+    --bright-gray:#EEEEEE;
+    --white:#FFFFFF;
+    --royal-orange:#FF9350;
+    --deer-orange:#C28864;
+    --raising-black:#2A2228;
+    --sm:16px;
+    --md:18px;
+    --bg:24px;
+  } 
+  
+  * {
+      padding: 0;
+      margin: 0;
+    }
+  html {
+    font-size: 62.5%;
+  }
+
+  body{
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-size: var(--md);
+        font-style: normal;
+        background-color:var(--eerie-black);
+        color:var(--white)
+}
+
+    
+.profile_nav_ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+.profile_nav_ul a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+.profile_gral{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+ }
+.img_profile{
+    max-width: 100%;
+    margin: 0 80px 0 80px;
+    
+}
+.profile_gral_info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+
+.profile_gral_title{
+    font-weight: 600;
+    font-size: 4.8rem;
+    margin-top: 60px;
+     }
+
+.profile_gral_subtitle{
+    font-weight: 400;
+    font-size: 4.0rem;
+    }
+
+.profile_gral_info--welcom
+{
+  color:var(--royal-orange);
+  font-size: var(--bg);
+}
+
+.profile_gral_button{
+    border-radius: 4px;
+    cursor:pointer;
+    font-size: var(--md);
+    height: 40px;
+    width: auto;
+    }
+    
+  .defect{
+    background-color: var(--royal-orange);
+    border:none;
+    color:var(--eerie-black);
+    padding: 10px;
+    
+    }
+  .secondary{
+    background-color: var(--gunmetal);
+    border: solid var(--royal-orange);
+    border-width: 1px;
+    color:var(--bright-gray);
+    padding:5px;
+    
+  }
+ /* .profile_skills{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width:100%;
+  }*/
+  .profile_soft_skills{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+  }
+  .cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .profile_skills_intro{
+    display: block;
+    justify-content: centers;
+  
+  }
+  .skill_card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    border: 1px solid var(--gunmetal);
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0px 5px 0px 5px;
+  }
+  
+  .skill_card_title{
+     font-size: 2rem;
+     font-weight: 200;
+     color:var(--bright-gray);
+     margin: 20px 0px 20px 0;
+  }
+
+  .skill_card_icon{
+    background-color:var(--gunmetal);
+    /* box-shadow: 0px 5px 25px; */
+    border:none;
+    border-radius: 50%;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    z-index: 1;
+    transform: rotate(0); 
+    transition: .3s ease;
+  }
+  .skill_card_icon:hover {
+    transform: rotate(-45deg);
+    }
+  #rm{
+    display:none;
+  }  
+  
+  .bgcontent{
+    display:none;
+  }
+
+  #rm:checked ~ .bgcontent {
+    display:block;
+    
+  }
+  #rm:checked ~ .shcontent label{
+    display:none;
+  }
+
+  .skill_card label{
+    cursor:pointer;
+    text-decoration: underline;
+    display: inline-block;
+    color:var(--royal-orange);
+  }
+ 
+
+
+  @media (max-width:1234px){
+    /*.profile_gral
+    {
+      display: grid;
+      /* grid-template-rows: 300px 50px 50px 50px; 
+      grid-template-rows: 300px 1fr 1fr 1fr;
+      justify-content: center;
+      align-content: space-between;
+      width:100%;
+      height: 100vh;    }
+      */
+    .profile_gral
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
+         }
+    
+    .profile_gral_info{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+     }
+    .profile_gral_title{
+        font-weight: 600;
+        font-size: 3.2rem;
+        margin-top: 60px;
+        }
+    .img_profile{
+        align-self:center;
+        max-width: 100%;
+        margin: 0 0 0 0;
+}
+    .profile_gral_subtitle{
+        font-weight: 400;
+        font-size: 2.6rem;
+            }
+  }
