@@ -12,6 +12,7 @@
   } 
   
   * {
+      box-sizing: border-box;    
       padding: 0;
       margin: 0;
     }
@@ -179,9 +180,52 @@
     display: inline-block;
     color:var(--royal-orange);
   }
- 
+.profile_hard_skills{
+  display: flex;
+  flex-direction: column;
 
+}
+#hard_skills_tree {
+  position: relative;
+  left:30px
+}
+#hard_skills_tree ul, #hard_skills_tree li {
+  position: relative;
+  left:30px;
+}
+#hard_skills_tree ul{
+  list-style: none;
+}
+#hard_skills_tree ul ul{
+  display: none;
+}
 
+#hard_skills_tree li:hover>ul{
+  display:block;
+}
+
+#hard_skills_tree li::before, #hard_skills_tree li::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+}
+#hard_skills_tree li::before {
+  border-top: 1px solid blueviolet;
+  top: 9px;
+  width: 8px;
+  height: 0;
+}
+
+#hard_skills_tree li::after {
+  border-left: 1px solid brown;
+  height: 100%;
+  width: 0px;
+  top: 2px;
+}
+
+.hard_skills_tree ul > li:last-child::after {
+  height: 8px;
+}
   @media (max-width:1234px){
     /*.profile_gral
     {
