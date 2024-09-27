@@ -1,29 +1,97 @@
-    .profile_gral
-    {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      width: 100%;
-         }
-    
-    .profile_gral_info{
+.content_profile{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.profile_gral{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+   
+ } 
+ .profile_gral_info{
         display:flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-evenly;
         gap: 30px;
-     }
+        margin: 0 0 0 5rem ;
+       
+}
     .profile_gral_title{
         font-weight: 600;
         font-size: 3.2rem;
-        margin-top: 60px;
         }
     .img_profile{
         align-self:center;
         max-width: 100%;
         margin: 0 0 0 0;
 }
-    .profile_gral_subtitle{
-        font-weight: 400;
-        font-size: 2.6rem;
-           }
+.profile_soft_skills{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+  }
+.cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.profile_skills_intro{
+    display: block;
+    justify-content: centers;
   
+}
+.works_framework_all{
+    width: 80rem;
+    height: 80rem;
+    border: #FF9350 solid 0.2rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    }
+
+.proyectos_1{
+    width:50%; 
+ }
+.proyectos1{
+ width: 100%;
+ height: 100%; 
+}
+.proyectos_2{
+  display:flex;
+  flex-direction: column;
+  align-items:baseline;
+  width: 50%;
+}
+.proyectos2  {
+  width: 100%;
+  height:33% ; 
+ }
+ .proyectos3 {
+  width: 100%;
+  height:33% ; 
+ }
+ .proyectos4 {
+  width: 100%;
+  height:33% ; 
+ }
+ .works_framework_software{
+    width: 80rem;
+    height: 80rem;
+    border: #FF9350 solid 0.2rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    visibility: hidden;
+    
+    }
+
+#software_link:checked, #works_framework_software{
+    visibility:visible;
+}

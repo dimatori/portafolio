@@ -1,6 +1,61 @@
-.profile_gral{
+ .content_profile{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 100vw;
+  } 
+
+  .conten_img{
+    height:60%;
+   }
+.profile_gral
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between;
+    margin: 2rem;
+
+  } 
+  .profile_gral_info{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+ 
+  }
+
+.profile_gral_title{
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-top: 20px;
+  
+    }
+
+.profile_gral_subtitle{
+        font-weight: 400;
+        font-size: 2.8rem;
  }
+
+ .profile_soft_skills{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: 2rem;
+  }
+.cards{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 10rem;
+ 
+}
+.profile_skills_intro{
+    display: block;
+    justify-content: centers;
+  
+  
+}

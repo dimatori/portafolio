@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Protafolio de Diana M. Torres</title>
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="../portafolio/css/desktop.css" media="screen and (mind-width:800px)">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/movil.css" media="screen and (min-width: 170px)"> 
+    <link rel="stylesheet" type="text/css" href="./css/desktop.css" media="screen and (min-width:700px)">
 </head>
 
 <body>
@@ -23,29 +24,29 @@
               </ul>
             </nav>
   </header>
-  <main class="profile">
+  <main class="content_profile">
       <section class="profile_gral">
-        <figure class="profile_gral_img">
+        <figure class="conten_img">
                 <img src="./images/DMTR-PF.jpeg" alt="Picture of profile" class="img_profile">
         </figure>
         <div class="profile_gral_info">
-             <div>
-                  <h1 class="profile_gral_title"> Diana Maria Torres Ricaurte </h1>
-                  <p class="profile_gral_subtitle"> Research Software Engineer </p>
-                </div>
-                <div>
-                  <p class="profile_gral_info--welcom"> Welcome to my Profile. </p>
-                  <p>
+           <div>
+                <h1 class="profile_gral_title"> Diana Maria Torres Ricaurte </h1>
+                <p class="profile_gral_subtitle"> Research Software Engineer </p>
+            </div>
+            <div>
+                <p class="profile_gral_info--welcom"> Welcome to my Profile. </p>
+                <p>
                        Know about my experience and interests.
-                  </p>
-                </div>
-                <div> 
-                  <button class="profile_gral_button defect" type="submit"> Contact me</button>
-                  <button class="profile_gral_button secondary" type="submit"> Download my CV</button>
-                </div>
+                </p>
+            </div>
+            <div> 
+              <button class="profile_gral_button defect" type="submit"> Contact me</button>
+              <button class="profile_gral_button secondary" type="submit"> Download my CV</button>
+            </div>
           </div>   
-        </section>
-        <section class="profile_soft_skills">
+      </section>
+      <section class="profile_soft_skills">
           <div class="profile_skills_intro">
             <h1 class="profile_gral_title"> This 3 Reasons to Why Choose Me</h1>
           </div>
@@ -71,69 +72,102 @@
             <div class="skill_card"> Perseverance</div>
             <div class="skill_card"> Achivement oriented</div>
         </div>
-        </section>
+      </section>
       <section class="profile_hard_skills"> 
         <div>  
           <h1 class="profile_gral_title"> Let more to know Diana Torres</h1> 
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, eligendi, nulla tenetur magni numquam 
-            nisi dolorum ipsam ratione, reiciendis quae laborum id. Labore voluptatum, delectus iste quas quos 
-            inventore nesciunt.</p>
-        </div>
-        <div id="hard_skills_tree">
-          <ul> Hard Skills
-            <li> Programming Paradigms
-              <ul>
-                <li> OO</li>
-                <li> functional</li>
-                <li> imperative</li>
-              </ul>
-            </li>
-            <li>Programming languages
-              <ul>
-                <li> C++</li>
-                <li> Python</li>
-                <li> Java</li>
-                <li> Visual</li>
-                <li> Scheme</li>
-              </ul>
-            </li>
-            <li>Web development
-              <ul>
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Php</li>
-                <li>REeactJS</li>
-              </ul>
-            <li> Modeling
-              <ul>
-                <li>UML</li>
-                <li>Pre-conceptual schemas</li>
-                <li>OWL</li>
-              </ul>
-            </li>
-            <li>Version control System
-              <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-              </ul>
-            </li>
-            <li> DBMS
-              <ul>
-                <li>Postgres</li>
-                <li>MySQL</li>
-                <li>SQL</li>
-              </ul>
-            </li>
-            </li>
-          </ul>
+        <div class="hards">
+          
+            <figure class="hard_skills">
+              <img class="hd_img" src="./images/hard_skills.png" alt="Imagen representando hard skills de un programador">
+            </figure>
+          
+          <div id="hard_skills_tree">
+            <ul> Hard Skills
+              <li> Programming Paradigms
+                <ul>
+                  <li> OO</li>
+                  <li> functional</li>
+                  <li> imperative</li>
+                </ul>
+              </li>
+              <li>Programming languages
+                <ul>
+                  <li> C++</li>
+                  <li> Python</li>
+                  <li> Java</li>
+                  <li> Visual</li>
+                  <li> Scheme</li>
+                </ul>
+              </li>
+              <li>Web development
+                <ul>
+                  <li>HTML</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>Php</li>
+                  <li>REeactJS</li>
+                </ul>
+              <li> Modeling
+                <ul>
+                  <li>UML</li>
+                  <li>Pre-conceptual schemas</li>
+                  <li>OWL</li>
+                </ul>
+              </li>
+              <li>Version control System
+                <ul>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                </ul>
+              </li>
+              <li> DBMS
+                <ul>
+                  <li>Postgres</li>
+                  <li>MySQL</li>
+                  <li>SQL</li>
+                </ul>
+              </li>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="works">
+      <section id="works" class="works">
         <h1 class="profile_gral_title"> The Best Portafolio of My Works</h1>
+        
+          <nav class="works_nav">
+            <ul class="works_list_ul">
+            <li><a href="#works">All</a></li>
+            <li><a id="software_link" href="#works">Software</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Courses</a></li>
+            </ul>
+          </nav>
+
+       <div id="works_framework_all" class="works_framework_all"> 
+        <figure class="proyectos_1">
+          <img class="proyectos1" src="./images/Programacion_sm.jpg" alt="Imagen de programador escribiendo codigo">
+        </figure>
+        <figure class="proyectos_2">
+          <img class="proyectos2" src="./images/Proyecto_sm.jpg" alt="Imagen de un proyecto en equipo">
+          <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
+          <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
+        </figure>
+       </div>
+
+       <div class="works_framework_software"> 
+        <figure class="proyectos_1">
+          <img class="proyectos1" src="./images/Programacion_sm.jpg" alt="Imagen de programador escribiendo codigo">
+        </figure>
+        <figure class="proyectos_2">
+          <img class="proyectos2" src="./images/Proyecto_sm.jpg" alt="Imagen de un proyecto en equipo">
+          <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
+          <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
+        </figure>
+       </div>
       </section>
-  </main>
+ </main>
 </body>
 </html>

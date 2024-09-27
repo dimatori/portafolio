@@ -42,35 +42,17 @@
     color:var(--white);
     text-decoration: none;
 }
-
-.profile_gral{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+.conten_img{
+  display: flex;
+  justify-content: center;
+ 
  }
+
 .img_profile{
-    max-width: 100%;
-    margin: 0 8rem 0 8rem;
+    max-width: 60vw;
+    margin: 0 0.8rem 0 0.8rem;
     
 }
-.profile_gral_info{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    }
-
-.profile_gral_title{
-    font-weight: 600;
-    font-size: 4.8rem;
-    margin-top: 6rem;
-     }
-
-.profile_gral_subtitle{
-    font-weight: 400;
-    font-size: 4.0rem;
-    }
 
 .profile_gral_info--welcom
 {
@@ -101,37 +83,17 @@
     padding:0.5rem;
     
   }
- /* .profile_skills{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    width:100%;
-  }*/
-  .profile_soft_skills{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-  }
-  .cards{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .profile_skills_intro{
-    display: block;
-    justify-content: centers;
-  
-  }
+
   .skill_card{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 320px;
+    width: 32rem;
+    min-height: 40rem;
     border: 0.1rem solid var(--gunmetal);
     font-family: sans-serif;
     padding: 1rem;
-    margin: 0 0.5rem 0 0.5rem;
+    margin: 1rem 0 1rem 0;
   }
   
   .skill_card_title{
@@ -185,11 +147,34 @@
 .profile_hard_skills{
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.hard_skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
 
 }
+.hd_img{
+  max-width: 60%;
+
+}
+.hards{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width:60%;
+ margin-top: 3rem;
+}
+#hard_comp{
+  
+    width: 40%;
+}
+
 #hard_skills_tree {
   position: relative;
-  left:3rem;
+  width: 60%;
 }
 #hard_skills_tree ul, #hard_skills_tree li {
   position: relative;
@@ -228,43 +213,62 @@
 .hard_skills_tree ul > li:last-child::after {
   height: 0.8rem;
 }
-  /* @media (max-width:1234px){
-    /*.profile_gral
-    {
-      display: grid;
-      /* grid-template-rows: 300px 50px 50px 50px; 
-      grid-template-rows: 300px 1fr 1fr 1fr;
-      justify-content: center;
-      align-content: space-between;
-      width:100%;
-      height: 100vh;    }
-      
-    .profile_gral
-    {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      width: 100%;
-         }
-    
-    .profile_gral_info{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 30px;
-     }
-    .profile_gral_title{
-        font-weight: 600;
-        font-size: 3.2rem;
-        margin-top: 60px;
-        }
-    .img_profile{
-        align-self:center;
-        max-width: 100%;
-        margin: 0 0 0 0;
+.works{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
-    .profile_gral_subtitle{
-        font-weight: 400;
-        font-size: 2.6rem;
-            }
-  } */
+.works_framework{
+width: 80rem;
+height: 80rem;
+border: #FF9350 solid 0.2rem;
+display:flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+.works_list_ul li{
+  display: inline-block;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+ }
+
+ .works_list_ul a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+/* .proyectos_imgs{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+} */
+.proyectos_1{
+    width:50%; 
+ }
+.proyectos1{
+ width: 100%;
+ height: 100%; 
+}
+.proyectos_2{
+  display:flex;
+  flex-direction: column;
+  align-items:baseline;
+  width: 50%;
+}
+.proyectos2  {
+  width: 100%;
+  height:33% ; 
+ }
+ .proyectos3 {
+  width: 100%;
+  height:33% ; 
+ }
+ .proyectos4 {
+  width: 100%;
+  height:33% ; 
+ }
