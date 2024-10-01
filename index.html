@@ -136,17 +136,28 @@
       </section>
       <section id="works" class="works">
         <h1 class="profile_gral_title"> The Best Portafolio of My Works</h1>
-        
+        <input type="checkbox" class="sm_proyectos_op" id="sm_proyectos2">
+        <input type="checkbox" class="sm_proyectos_op" id="sm_proyectos3">
+        <input type="checkbox" class="sm_proyectos_op" id="sm_proyectos4">
           <nav class="works_nav">
             <ul class="works_list_ul">
-            <li><a href="#works">All</a></li>
-            <li><a id="software_link" href="#works">Software</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Courses</a></li>
-            </ul>
-          </nav>
+             <li><label for="sm_proyectos1">All</label>
+                 <!--a href="#works">All</a>-->
+             </li>
+            <li>              
+              <label for="sm_proyectos2" >Software</label> <!--<a id="software_link" href="#works">Software</a></li> -->  
+            </li>
+            <li>
+              <label for="sm_proyectos3" >Projects</label> 
+              <!--a href="#">Projects</a>-->
+            </li>
+            <li>
+              <label for="sm_proyectos4" >Courses</label> 
+              <!--<a href="#">Courses</a></li>-->
+           </ul>
+         </nav>
 
-       <div id="works_framework_all" class="works_framework_all"> 
+       <div id="works_framework_all" class="works_framework works_framework_all"> 
         <figure class="proyectos_1">
           <img class="proyectos1" src="./images/Programacion_sm.jpg" alt="Imagen de programador escribiendo codigo">
         </figure>
@@ -154,19 +165,33 @@
           <img class="proyectos2" src="./images/Proyecto_sm.jpg" alt="Imagen de un proyecto en equipo">
           <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
           <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
+        </figure> 
+      </div>
+      <div class="works_framework works_framework_software"> 
+        <figure class="software_proyecto">
+           <img  src="./images/Programacion_sm.jpg" alt="Imagen de programador escribiendo codigo">
+        </figure>
+        
+        <figure class="software_proyecto">
+           <img src="./images/Proyecto_sm.jpg" alt="Imagen de un proyecto en equipo">
+        </figure>
+       </div>   
+
+       <div class="works_framework works_framework_projects"> 
+        <figure class="proyectos_1">
+              <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
+        </figure>
+       
+       </div>
+       <div class="works_framework works_framework_courses"> 
+       
+        <figure class="proyectos_1">
+           <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
         </figure>
        </div>
 
-       <div class="works_framework_software"> 
-        <figure class="proyectos_1">
-          <img class="proyectos1" src="./images/Programacion_sm.jpg" alt="Imagen de programador escribiendo codigo">
-        </figure>
-        <figure class="proyectos_2">
-          <img class="proyectos2" src="./images/Proyecto_sm.jpg" alt="Imagen de un proyecto en equipo">
-          <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
-          <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
-        </figure>
-       </div>
+      
+       
       </section>
  </main>
 </body>
