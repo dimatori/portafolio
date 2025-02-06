@@ -19,11 +19,11 @@
         margin: 0 0 0 5rem ;
        
 }
-    .profile_gral_title{
+.profile_gral_title{
         font-weight: 600;
         font-size: 3.2rem;
         }
-    .img_profile{
+.img_profile{
         align-self:center;
         max-width: 100%;
         margin: 0 0 0 0;
@@ -44,14 +44,24 @@
     justify-content: centers;
   
 }
+
+/* Proyectos */
+.works_framework{
+    min-width: 80rem;
+    min-height: 80rem;
+    /*border: #FF9350 solid 0.2rem;*/
+    display:flex;
+    flex-wrap: wrap;
+     }
 .works_framework_all{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   /*  display: none;*/
 }
 
+/*Proyectos de Software*/
 .proyectos_1{
     width:50%; 
  }
@@ -79,19 +89,21 @@
  }
 
  .works_framework_software{
-    
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
+   
+    /* flex-wrap: wrap;
+    justify-content:left;
+    align-items:self-start; */
+    /*width: 80%;
+    /*height: 100%;*/
     display:none;
-    
-    }
+   
+  }
 
   .works_framework_courses{
         display:flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
+        justify-content:center;
+      
         display:none;
    } 
 
@@ -100,67 +112,97 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    /* border: var(--white) solid 0.2rem;
+    border-radius: 0.5rem; */
+    padding-left: 2.5 rem;
+    padding-right: 2.5 rem;
     display:none;
 }
-
-#sm_proyectos2:checked ~ .works_framework_software {
+.works_framework_projects > div{ 
+  margin:1rem;
+  border: var(--white) solid 0.2rem;
+  border-radius: 0.5rem;
+}
+.works_framework_courses >div{
+  width: 80%;
+}
+.works_card{
     display:flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    
-   }
-
-#sm_proyectos2:checked ~ .works_framework_courses ~ .works_framework_projects  {
-    display:none;
-}
-#sm_proyectos2:checked ~.works_framework_all{
-    display:none;
-}
-
-
-
-
-#sm_proyectos3:checked ~.works_framework_all{
-    display:none;
-}
-#sm_proyectos3:checked ~.works_framework_software  {
-        display:none;
-    }
-#sm_proyectos3:checked ~.works_framework_courses{
-        display:none;
-    }
-#sm_proyectos3:checked ~.works_framework_projects {
-    
-    display:flex;    
-    
-}
-
-
-
-#sm_proyectos4:checked  ~.works_framework_projects{
-    display:none;
-    }  
-#sm_proyectos4:checked  ~.works_framework_software{
-        display:none;
-        } 
- #sm_proyectos4:checked  ~.works_framework_all{
-            display:none;
-    }  
-#sm_proyectos4:checked  ~.works_framework_courses{
-    display:flex;
-  } 
-
-
-
-.software_proyecto{
-    display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 50%;
-}
+    justify-content:space-around;
+    align-items:center;
+    background-color:var(--gunmetal);
+    max-width: 40rem;
+    max-height: 50rem; 
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--white);
+    padding-left: 2.5 rem;
+    padding-right: 2.5 rem;;
+    margin: 0.1rem;
+    width:100%;
+       /* height: 50%; */
+   
+  }
 
+/* .software_proyecto_fig{
+    display: flex;
+   } */
 
-.software_proyecto img{
-    height: 100%;
-    width: 100%;
+/* .slider-container img{
+      height:20%;
+      }  */
+      
+/* .works_card:hover
+ {
+    transition: all 300ms;
+    position: relative;
+    transform: scale(1.05);
+}  */
+
+/*Software 2*/
+ #chbx_software1:checked ~ .proyecto1_desc {
+  display: flex; 
+  flex-direction: column;
+ }
+ 
+
+ /* #chbx_software1:checked ~ .works_framework_software.img {
+  size: 40%;
+
+ } */
+/* #chbx_software1:checked ~ .proyecto1_desc{
+  flex: 1 0 auto ;
+
+ } */
+/*Software 2*/
+#chbx_software2:checked ~ .proyecto2_desc {
+  display: flex; 
+  flex-direction: column;
+ }
+ 
+ 
+ /* #chbx_software1:checked ~ .works_framework_software.img {
+  size: 40%;
+
+ } */
+#chbx_software2:checked ~ .proyecto2_desc{
+  flex: 1 0 auto ;
+
+ }
+ .project_ficha_tecnica{
+  display: flex;
+  flex-direction: row;
 }
+ .abstract{
+  width:50%;
+  }
+ .other-info{
+    width:50%;
+  }
+/* .about_content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+} */

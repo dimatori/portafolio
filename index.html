@@ -12,22 +12,24 @@
     <link rel="stylesheet" type="text/css" href="../css/estilos.css"> 
     <link rel="stylesheet" type="text/css" href="./css/movil.css" media="screen and (min-width: 170px)"> 
     <link rel="stylesheet" type="text/css" href="./css/desktop.css" media="screen and (min-width:700px)">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> 
+  </head>
 
 <body>
   <header>
     <nav class="profile_nav">
               <ul class="profile_nav_ul">
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contac">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="/contac" >Contact</a></li>
               </ul>
             </nav>
   </header>
   <main class="content_profile">
       <section class="profile_gral">
         <figure class="conten_img">
-                <img src="./images/DMTR-PF.jpeg" alt="Picture of profile" class="img_profile">
+                <img src="./images/Profile Picture 1_sm.jpg" alt="Picture of profile" class="img_profile">
         </figure>
         <div class="profile_gral_info">
            <div>
@@ -41,8 +43,10 @@
                 </p>
             </div>
             <div> 
-              <button class="profile_gral_button defect" type="submit"> Contact me</button>
-              <button class="profile_gral_button secondary" type="submit"> Download my CV</button>
+              <!-- <button class="profile_gral_button defect" role="link" onclick="mailto:dimatori@gmail.com" type="submit"> Contact me</button> -->
+              <a class="profile_gral_button defect" role="button" href="mailto:dimatori@gmail.com" > Contact me</a>
+              <a class="profile_gral_button secondary" role="button" href="./downloads/CV-DIANA M TORRES RICAURTE.pdf" download="CV-DIANA M TORRES RICAURTE.pdf" > Download my CV</a>
+              <!-- <button class="profile_gral_button secondary" type="submit"> Download my CV</button> -->
             </div>
           </div>   
       </section>
@@ -52,25 +56,69 @@
           </div>
           <div class="cards">
             <div class="skill_card">
-              <input type="checkbox" id="rm">
+              <input type="checkbox" id="rm_creativity">
               <img src="./images/bulbo.png" alt="Icon" class="skill_card_icon"/> 
               <div class="skill_card_title">Creativity</div>
               <div class="shcontent">
-                <p>Thinking innovative solutions to different problems</p>
-                <label for="rm">Read more</label>
+                <p>Thinking of innovative solutions to problems</p>
+                <label class="link" for="rm_creativity">Read more</label>
               </div>
               <div class="bgcontent">
-                <p> A story about creativity: </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Cupiditate quasi expedita repellendus! Maiores, commodi itaque velit quas illo adipisci. 
-                  Voluptatem impedit nam velit odio perferendis atque quaerat sit dolor provident!</p>
-                <label for="rm">Show less</label>
+                <p class="story_title"> Some creativity products: </p>
+                
+                  <ul class="cards_examples_list">
+                    <li>Authoring of academics materials incluging learning guides, class material, children's books </li>
+                    <li>Test Team Productivity Measurement Formats</li>
+                    <li>A terminology unification process of interoperability </li>
+                    <li>A mapping process to controlled language of interoperability concepts</li>
+                  </ul>
+               
+                <label class="link" for="rm_creativity">Show less</label>
               </div>
               
             </div>
-            <div class="skill_card"> Perseverance</div>
-            <div class="skill_card"> Achivement oriented</div>
+            <div class="skill_card"> 
+              <input type="checkbox" id="rm_perseverance">
+              <img src="./images/conveyor-belt-alt.png" alt="Icon for perseverance" class="skill_card_icon"/> 
+              <div class="skill_card_title">Perseverance</div>
+              <div class="shcontent">
+                <p> Being self motivated</p>
+                <label class="link" for="rm_perseverance">Read more</label>
+              </div>
+              <div class="bgcontent">
+                <p class="story_title"> A story about Perseverance: </p>
+                
+                  <p>
+                    I have persevered in my idea of ​​working exclusively in research. 
+                    As a result, I completed my Master's and PhD studies almost 11 years after obtaining Bachelor's degree. 
+                    I applied for a postdoctoral fellowship with the European Union and am looking for a job as a research software engineer.
+                  </p>
+               
+                <label class="link" for="rm_perseverance">Show less</label>
+              </div>
+
+              
+            </div>
+            <div class="skill_card"> 
+              <input type="checkbox" id="rm_achv_oriented">
+              <img src="./images/bullseye-arrow.png" alt="Icon for achivement oriented" class="skill_card_icon"/> 
+              <div class="skill_card_title">Achivement oriented</div>
+              <div class="shcontent">
+                <p> Constantly working on my goals </p>
+                <label class="link" for="rm_achv_oriented">Read more</label>
+              </div>
+              <div class="bgcontent">
+                <p class="story_title"> Some results of the goals set: </p>
+
+                <ul class="cards_examples_list"class="cards_examples_list">                
+                  
+                  <li>Scholarship for PhD studies by the Ministry of Science, Technology, and Innovation of Colombia</li>
+                  <li>Scholarship of the Facultuy of Mines by Facluty of Mines of the Universidad Nacional de Colombia </li>
+                  <li>Research stay at University of Bordeaux, France</li>
+                </ul>
+                <label class="link" for="rm_achv_oriented">Show less</label>
+              </div>
+            </div>
         </div>
       </section>
       <section class="profile_hard_skills"> 
@@ -80,11 +128,11 @@
         <div class="hards">
           
             <figure class="hard_skills">
-              <img class="hd_img" src="./images/hard_skills.png" alt="Imagen representando hard skills de un programador">
+              <img class="hd_img" src="./images/Profile Picture 2.jpeg" alt="Imagen representando hard skills de un programador">
             </figure>
           
           <div id="hard_skills_tree">
-            <ul> Hard Skills
+            <ul class="hd_sk_title"> <p>Hard Skills</p>
               <li> Programming Paradigms
                 <ul>
                   <li> OO</li>
@@ -135,25 +183,18 @@
         </div>
       </section>
       <section id="works" class="works">
-        <h1 class="profile_gral_title"> The Best Portafolio of My Works</h1>
+        <div>
+          <h1 class="profile_gral_title"> The Best Portafolio of My Works </h1>
+        </div>
         <input type="checkbox" class="sm_proyectos_op" id="sm_proyectos2">
         <input type="checkbox" class="sm_proyectos_op" id="sm_proyectos3">
         <input type="checkbox" class="sm_proyectos_op" id="sm_proyectos4">
           <nav class="works_nav">
-            <ul class="works_list_ul">
-             <li><label for="sm_proyectos1">All</label>
-                 <!--a href="#works">All</a>-->
-             </li>
-            <li>              
-              <label for="sm_proyectos2" >Software</label> <!--<a id="software_link" href="#works">Software</a></li> -->  
-            </li>
-            <li>
-              <label for="sm_proyectos3" >Projects</label> 
-              <!--a href="#">Projects</a>-->
-            </li>
-            <li>
-              <label for="sm_proyectos4" >Courses</label> 
-              <!--<a href="#">Courses</a></li>-->
+           <ul class="works_list_ul">
+              <li><label for="sm_proyectos1">All</label>    </li>
+              <li><label for="sm_proyectos2" >Software</label>   </li>
+              <li><label for="sm_proyectos3" >Projects</label>   </li>
+              <li><label for="sm_proyectos4" >Courses</label> </li>
            </ul>
          </nav>
 
@@ -166,33 +207,327 @@
           <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
           <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
         </figure> 
-      </div>
+       </div>
       <div class="works_framework works_framework_software"> 
-        <figure class="software_proyecto">
-           <img  src="./images/Programacion_sm.jpg" alt="Imagen de programador escribiendo codigo">
-        </figure>
-        
-        <figure class="software_proyecto">
-           <img src="./images/Proyecto_sm.jpg" alt="Imagen de un proyecto en equipo">
-        </figure>
-       </div>   
+        <div class="works_card" >
+          <input type="checkbox" class="chbx_software" id="chbx_software1">
+            <!--figure class="software_proyecto_fig"-->
+            <div class="slider-container">
+              <img  class="slider-item" src="./images/Img_Ppal_Bkg.png" alt="Software interface imagen"/>
+              <img  class="slider-item" src="./images/P1_Img2_Bkg.png" alt="Search button funcionality"/>
+              <img  class="slider-item" src="./images/P1_Img3_Bkg.png" alt="Process completation interface"/>
+              <img  class="slider-item" src="./images/P1_Img4_Bkg.png" alt="Source code image"/>
+              
+            <!--figure-->
+            </div>
+              <p> Address Normalizer</p>
+              <label class="link link_rm" for="chbx_software1">Read more</label>
+              <label class="link link_sl" for="chbx_software1">Show less</label>
+              <div class="proyecto1_desc">
+                <table class="table_ficha_proyecto" border="2">
+                  <tr>
+                    <td class="table_title" colspan="2"> Technical Specifications </td>            
+                  </tr>
+                  <tr>
+                    <td> Name:</td> <td>Address Normalizer</td>
+                  </tr>
+                  <tr>
+                    <td> Description:</td>
+                    <td> Software development to normalize large data file with address information
+                  </td>
+                  </tr>
+                  <tr>
+                    <td> Input/Output examples:</td>
+                    <td>  
+                      <table class="io-examples">
+                        <tr>
+                          <td>KR26P 49-45</td>
+                          <td>KR 26P # 49 - 45</td>
+                                                  </tr>
+                      <tr>
+                        <td>CL28D2 NUM 272L-109</td>
+                        <td>CL 28D 2 # 272L - 109  </td>
+                      </tr>
+                      <tr>
+                        <td>CL23B2N-O7</td>
+                        <td>CL 23B # 2 OESTE - 7</td>
+                      </tr>
+                      <tr>
+                        <td>CL</td>
+                        <td>Información insuficiente</td>
+                      </tr>
+                     </table>
+                  </td>
+                  </tr> 
+                  <tr>
+                    <td> Beneficiary:</td>
+                    <td>  Major's office of Santiago de Cali, Colombia</td>
+                  </tr>
+                  <tr>
+                    <td>Programming languaje:</td>
+                    <td> Phyton 3.9.2 </td>
+                  </tr>
+                  
+                  <tr >
+                    <td rowspan="2" >Model of computation: </td>
+                    <td> finite-state machine  </td>
+                    
+                    </tr>
+                  <tr>  
+                    <td>regular expresions> </td>
+                  </tr>
+                  <tr>  
+                    <td>Architecture: </td>
+                    <td>MVC</td>
+                  </tr>
+                </table>
+             
+            </div> 
+              
+         </div>
+        <div class="works_card">
+          <input type="checkbox" class="chbx_software" id="chbx_software2">
+          <div class="slider-container"> 
+            <!--figure class="software_proyecto_fig"-->
+            <img src="./images/P2_Img_Ppal.png" alt="Software interface imagen">
+            <img src="./images/P2_Img2_Bkg.png" alt="Add button funcionality"/>
+            <img src="./images/P2_Img3_Bkg.png" alt="Search funcionality"/>
+            <img src="./images/P2_Img4_Bkg.png" alt="Source code"/>
+          <!--figure-->
+        </div>         
+          <p> Todo Machine</p>
+          <label class="link link_rm" for="chbx_software2">Read more</label>
+          <label class="link link_sl" for="chbx_software2">Show less</label>
+          <div class="proyecto2_desc">
+            <table class="table_ficha_proyecto" border="2">
+              <tr>
+                <td class="table_title" colspan="2"> Technical Specifications </td>            
+              </tr>
+              <tr>
+                <td> Name:</td> <td>Todo Machine</td>
+              </tr>
+              <tr>
+                <td> Description:</td>
+                <td> Software development as a REACT.JS course project. The project consists of developing a web application to create a to-do list.
+              </td>
+              </tr>
+              <tr>
+                <td> Main functionalities</td>
+                <td>  
+                  <ul>
+                    <li> Show how many to-do have been completed and how many are missing </li>
+                    <li>Add and remove all to the list</li>
+                    <li>Search to-do in the to-do list</li>                  
+                 </ul>
+              </td>
+              </tr> 
+              <tr>
+                <td>Programming technologies:</td>
+                <td> 
+                  <ul>
+                    <li>ReactJS 19.0.0</li>
+                    <li>npm 9.8.1</li>
+                    <li>Git 2.34.1 / GitHub</li>
+                    <li>Ubunt 22.04.2 LTS</li>
+                    <li>Windows subsystem for Linux</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr> 
+                <td>Architecture: </td>
+                <td>MVC</td>
+              </tr>
+             <tr >
+              
+              <tr>  
+                <td>GitHub Pages: </td>
+                <td><a href="https://dimatori.github.io/curso-react-intro/">https://dimatori.github.io/curso-react-intro</a>/</td>
+              </tr>
+            </table>
+          
+        </div> 
+           
+        </div>
+      </div>   
 
        <div class="works_framework works_framework_projects"> 
-        <figure class="proyectos_1">
-              <img class="proyectos4" src="./images/Evento_sm.jpg" alt="Imagen de un evento academico">
-        </figure>
+        <div > <h4>Project #1</h4> 
+          <div class="project_content">
+            <div class="project_name">
+              <p> FORMULATING A THEORY ABOUT INTEROPERABILITY AMONG HETEROGENEOUS SOFTWARE SYSTEMS</p>
+              <div class="line-project-container">
+                <div class="line"> </div>
+                <div class="line-text">TITLE</div>
+              </div>
+           </div>
+           <div class="project_ficha_tecnica">
+            <div class="abstract">
+              <p>  We propose a theory for explaining the interoperability of software systems using idenitified seven essential elements. 
+                The theory covers the principles of interoperability in the form of axioms and propositions that explain what is needed 
+                to establish interoperability.</p>
+              <div class="line-project-container">
+                  <div class="line">  </div>
+                  <div class="line-text">ABSTRACT</div>
+              </div>
+              <p> Document available at:</p>
+              <p><a href="https://repositorio.unal.edu.co/handle/unal/76654" target="_blank" rel="noopener noreferrer">Universidad Nacional de Colombia </a> </p>
+              <div class="line-project-container">
+                  <div class="line">  </div>
+                  <div class="line-text">REPOSITORY</div>
+              </div>
+            </div>
+            <div class="other-info">
+              <p> Start date: 01/01/2015</p>
+              <p> End date: 06/12/2019</p>
+              <div class="line-project-container">
+                <div class="line">  </div>
+                <div class="line-text">DURATION</div>
+              </div>
+              <p>  Main Results:
+                <ul>
+                  <li> A terminology unification about software interoperability</li>
+                  <li> Seven interoperability essential elements </li>
+                  <li> An axiomatic approach for explaining software interoperability</li>
+                </ul>
+              </p>
+              <div class="line-project-container">
+                <div class="line">  </div>
+                <div class="line-text">RESULTS</div>
+              </div>
+            </div>
+           </div>
+         </div>
+        </div>
+        <div><h4>Project #2</h4>
+          <div class="project_content">
+            <div class="project_name">
+              <p> A METHOD FOR MEASURING SOFTWARE TEST TEAM PRODUCTIVITY</p>
+              <div class="line-project-container">
+                <div class="line"> </div>
+                <div class="line-text">TITLE</div>
+              </div>
+           </div>
+           <div class="project_ficha_tecnica">
+            <div class="abstract">
+              <p> A method for mesuring the test team productivity was proposed. 
+                Team productivity is measured by the number of test cases and the effort required to execute test cases. 
+                The method also provides a formal procedure for collecting relevant information on test productivity.
+               </p>
+              <div class="line-project-container">
+                  <div class="line">  </div>
+                  <div class="line-text">ABSTRACT</div>
+              </div>
+              <p> Document available at:</p>
+              <p> <a href="https://repositorio.unal.edu.co/handle/unal/20798" target="_blank" rel="noopener noreferrer">Universidad Nacional de Colombia</a></p>
+              <div class="line-project-container">
+                  <div class="line">  </div>
+                  <div class="line-text">REPOSITORY</div>
+              </div>
+            </div>
+            <div class="other-info">
+              <p> Fecha Inicio :01/08/2011</p>
+              <p> Fecha Fin : 01/04/2014</p>
+              <div class="line-project-container">
+                <div class="line">  </div>
+                <div class="line-text">DURATION</div>
+              </div>
+              <p>  Main Results:
+                <ul>
+                  <li>A set of features that impact test team productivity</li>
+                  <li>A numerical characterization in terms of units and scale for each identified features</li>
+                  <li>A method for collecting information on each feature </li>
+                </ul>
+              </p>
+              <div class="line-project-container">
+                <div class="line">  </div>
+                <div class="line-text">RESULTS</div>
+              </div>
+            </div>
+           </div>
+         </div>
+        </div>
+          
        
        </div>
-       <div class="works_framework works_framework_courses"> 
-       
-        <figure class="proyectos_1">
-           <img class="proyectos3"  src="./images/Profesora_sm.jpg" alt="Imagen de una Profesora en un aula de clase">
-        </figure>
+      <div class="works_framework works_framework_courses"> 
+        <div>
+        <div class="instution-container">
+          <div class="institution-name">ITM</div>
+          <div >
+            <ul class="course-list"> 
+              <li> Introdcution to Data Science</li>
+              <li> Software Development</li>
+              <li> General Systems Theory</li>
+            </ul>
+          </div>
+        </div>
+        <div class="instution-container">
+          <div class="institution-name">Octavio Calderon High School</div>
+          <div class="courses">
+            <ul class="course-list"> 
+              <li> Informatics and Technology</li>
+            </ul>
+          </div>
+        </div>
+        <div class="instution-container">
+          <div class="institution-name">Universidad Nacional de Colombia</div>
+          <div>
+            <ul class="course-list"> 
+              <li> Programming Fundamentals</li>
+            </ul>
+          </div>
+        </div>
+        <div class="instution-container">
+          <div class="institution-name">Universidad del Valle</div>
+          <div>
+            <ul class="course-list"> 
+              <li> Programming Fundamentals</li>
+              <li> Object-Oriented Programming</li>
+              <li> Introduction to the computer technologies</li>
+            </ul>
+          </div>
+        </div>
+        <!--div class="instution-container">   </div-->
        </div>
+      </div>
+     </section>
+    <section class="social_networks">
+      <div class="sn-legend" >
+        <div >
+          <p class="sn-owner">
+            <span> Diana Torres Social Networks</span>
+          </p>
+          <p>
+            <span> Found my publications</span>
+          </p>
+        </div>
+      </div>
+      <div class="sn-box">
+        <div class="icons-container">
+           <ul>
+            <li class="github"><a href="#" class="sni fa fa-github"></a></li>
+            <li class="linkedin"><a href="#" class="sni fa fa-linkedin"></a></li> 
+            <li class="researchgate"><a href="#" class="sni ai ai-researchgate"></a></li>
+            <li class="orcid"><a href="#" class="sni ai ai-orcid"></a></li> 
+          </ul>
+             
+        </div>
+      </div>
 
-      
-       
-      </section>
+    </section>
  </main>
+ <footer>
+  <div class="footer-divider-line">
+    <svg xmlsns="http://www.w3.org/2000/svg" width="300px" height="18">
+      <path d="M0 16 L3000 16"></path>
+    </svg>
+  </div>
+  <p class="copy">&copy; Copyright 2024</p>
+  <p class="copy">
+    Built with &#x2661; by Diana M. Torres
+    <!-- <a href="https://twitter.com/koladechris" target="_blank"
+      >Diana M. Torres</a > -->
+  </p>
+ </footer>
 </body>
 </html>
