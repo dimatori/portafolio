@@ -89,7 +89,6 @@ ul {
     color:var(--bright-gray);
     padding:1rem;
     text-decoration: none;
-    
   }
 
   /*Habilidades blandas*/
@@ -193,6 +192,14 @@ ul {
   align-items: center;
   margin: 2rem;
 }
+/* .hards{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width:70%;
+  margin-top: 3rem;
+}
 .hard_skills{
   display: flex;
   justify-content: center;
@@ -201,22 +208,15 @@ ul {
 
 }
 .hd_img{
-  max-width: 60%;
+  max-width: 90%;
+} */
 
-}
-.hards{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-between;
-  width:60%;
-  margin-top: 3rem;
-}
 #hard_comp{
   
     width: 40%;
 }
 
-#hard_skills_tree {
+#hard_skills_tree{
   position: relative;
   width: 60%;
 }
@@ -308,13 +308,13 @@ ul {
 }
 
 .proyectos_1{
-  width:50%; 
+  width:100%; 
 }
 .proyectos1{
 width: 100%;
 height: 100%; 
 }
-.proyectos_2{
+/* .proyectos_2{
 display:flex;
 flex-direction: column;
 align-items:baseline;
@@ -331,7 +331,7 @@ height:33% ;
 .proyectos4 {
 width: 100%;
 height:33% ; 
-}
+}  */
 
 
 #sm_proyectos2:checked ~ .works_framework_software {
@@ -576,12 +576,13 @@ height:33% ;
   padding-right: 3.2rem;
   padding-left: 3.2rem;
 }
+/* Considerar ponerlo en destkop
 .about{
   display: block;
   max-width: 120rem;
   min-width: 32rem;
   flex-basis: 100%;
-  }
+  } */
 
 .about_title{
 padding-top: 6.0rem;
@@ -596,23 +597,26 @@ padding-bottom: 1.5rem;
 .about_conten p{
 line-height:1.5 ;
 }
-.about-pict-conten{
+/* .about-pict-conten{
 overflow-x: hidden;
 overflow-y: hidden;
 
-}
+} */
 .about-pict-conten{
 margin-top: 4.5rem;
 text-align: center;
 }
-.about-pict-conten picture {
+/* .about-pict-conten picture {
   height: 4.46163rem;
   max-width: 100%;
   padding-top: 4.46163rem;
   min-height: 3.2rem;
   position:relative;
   
-}
+} */
+ 
+/*Fin sección about*/
+
 .table_ficha_proyecto{
   border: 2;
 }
@@ -693,9 +697,9 @@ text-align: center;
   justify-content: center;  
 }
 .icons-container ul li{
-  width:5rem;
+  /* width:5rem;
   height: 5rem;
-  line-height: 5rem;
+  line-height: 5rem; */
   margin: 0 1rem;
   text-align: center;
   border-radius: 50%;

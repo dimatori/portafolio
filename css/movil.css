@@ -1,49 +1,84 @@
+ /*General information of the Profile*/
  .content_profile{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100vw;
+    max-width:100vw;
+    align-items: center;
+    
   } 
 
   .conten_img{
     height:60%;
+    text-align: center;
    }
+   .img_profile{
+    max-width: 80vw;
+    height: 60vh;
+ }
 .profile_gral
   {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:center;
+    align-items:start;
     justify-content:space-between;
-    margin: 2rem;
+    margin: 1rem;
+    max-width: 100vw;
   } 
+ 
   .profile_gral_info{
     display: flex;
     flex-direction: column;
     height: 40vh;
     justify-content: space-evenly;
+    position:relative;
+    align-items:start;
  
   }
 
 .profile_gral_title{
     font-weight: 600;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     margin-top: 20px;
   
     }
 
 .profile_gral_subtitle{
         font-weight: 400;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
+ }
+ .profile_gral_info--welcom{
+  font-size: 1.8rem;
+ }
+ .profile_gral_info--invitation{
+  font-size: 1.6rem;
  }
 
+ .profile_gral_info_buttons{
+  display: flex;
+  flex-direction:column;
+  align-items: start;
+  justify-content: space-around;
+ }
+ .profile_gral_button{
+  border-radius: 4px;
+  cursor:pointer;
+  font-size: var(--sm);
+  margin-top: 1rem;
+  height: 3rem;
+  width: 15rem;
+  display: flex;
+  align-items:center;
+  }
+/******Soft skills********/ 
 .profile_soft_skills{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width:100%;
-    margin: 2rem;
+    margin: 1rem;
   }
 
  .profile_skills_intro{
@@ -55,12 +90,64 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 10rem;
+    align-items:center;
+    min-height: 6rem;
+    width: 100vw;
+}
+.skill_card{
+  width: 24rem;
+
+}
+/******* Hard skills ******/
+.profile_hard_skills{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin: 1rem;
+  width: 100vw;
+}
+.hards{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:start;
+  width:100vw;
+  margin-top: 3rem;
+}
+.hard_skills{
+ width: 100vw;
+ display:flex;
+ justify-content: center;
+}
+.hd_img{
+  max-width: 60%;
+  text-align: center;
+}
+#hard_skills_tree{
+  position: relative;
+  display:flex;
+  justify-content:center;
+  width: 100vw;
+  margin-top: 2rem;
  
 }
-/*¨Proyectos*/
+
+.hd_sk_title p{
+  color:var(--royal-orange);
+  font-size:var(--bg);
+}
+#hard_skills_tree ul{
+font-size: var(--sm);
+}
+
+/******* Proyectos *********/
+.works{
+  width:100vw;
+  margin: 1rem;
+  align-items:center;
+}
 .works_framework{
-  width: 35rem;
+  
   min-height: 40rem;
   min-width: 27rem;
   /*border: #FF9350 solid 0.2rem;*/
@@ -70,6 +157,9 @@
   justify-content: space-evenly;
   
   }
+.works_nav{
+  text-align: center;
+ }
 .works_framework_all{
   display:flex;
   flex-wrap: wrap;
@@ -77,18 +167,17 @@
   justify-content: space-evenly;
   /*width: 80%;*/
 }
+.works_framework_all figure{
+  display: flex;
+  justify-content: center;
+}
+.proyectos1{
+  width: 80%;
+  height: 80%; 
+ } 
 
-.works_framework_software{
-  
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  display:none;
- 
-  }
 
+/****** Proyectos Courses****/
 .works_framework_courses{
       display:flex;
       flex-wrap: wrap;
@@ -96,7 +185,15 @@
       justify-content: space-evenly;
       display:none;
  } 
-
+  .institution-name{
+  height: auto;
+  font-size: 1.8rem;
+}
+.course-list{
+  font-size: 1.6rem;
+  padding-left: 1.5rem;
+} 
+ 
 .works_framework_projects{
   display:flex;
   flex-wrap: wrap;
@@ -108,23 +205,23 @@
   margin: 0.1rem;
   display:none;
 }
+/****** Proyectos Software****/
 
-/* #sm_proyectos2:checked ~ .works_framework_software {
-  display: flex;
- } 
-
-#sm_proyectos2:checked ~ .works_framework_courses ~ .works_framework_projects {
+.works_framework_software{
+  
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
   display:none;
-}
-#sm_proyectos2:checked ~.works_framework_all{
-  display:none;
-} */
-.works_card{
+ }
+ .works_card{
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
-   
+  width:70%;  
 }
 .works_card{
   display:flex;
@@ -150,7 +247,6 @@
   text-align:justify;
  
 }
-
 .works_framework_software img{
   width:60%;
   height:30%;
@@ -166,10 +262,19 @@
   flex-direction: column;
 }
 
+.works_framework_projects > div{ 
+  margin:1rem;
+  border: var(--white) solid 0.2rem;
+  border-radius: 0.5rem;
+  width: 70%;
+}
+
 .project_ficha_tecnica{
   display: flex;
   flex-direction: column;
+ 
 }
+/****** Proyectos Proyectos****/
 .abstract {
   width:100%;
   }
@@ -177,16 +282,80 @@
     width:100%;
     }
 
+ .works_framework_projects h4{
+  
+      font-size: 2rem;
+      font-weight: 400;
+ 
+ }
 .project_content{
   display: flex;
   flex-direction: column;
   padding-top:2rem;
+  font-size: 1.6rem;
   width:100%;
   }
- .about_content{
+  .project_name{
+    font-weight: 400;
+    font-size: 1.8rem; 
+  }
+/*Social Networks*/
+
+.social_networks{
+  height: 25rem;
+  margin: 0rem;
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  
+}
+.icons-container{
+  align-items:center;
+  width: 100vw;
+ }
+  
+ .icons-container ul li{
+  width:4rem;
+  height: 4rem;
+  line-height:4rem;
+ }
+
+
+/* About Page */
+  .about_content{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: 100vw;
+  }
+.about{
+  display: block;
+  width:90vw;
+  font-size: 1.4rem;
+  text-align: justify;
+
+  }
+ .about_gral{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     align-items: center;
+    justify-content: left;
 }  
+  .about_gral{
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+  }
+  .about_conten{
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+  }
+
+  .about-pict-conten figure img {
+    max-width: 80vw;
+    position:relative;
+    
+  }
