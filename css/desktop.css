@@ -29,6 +29,10 @@
         max-width: 100%;
         margin: 0 0 0 0;
 }
+.profile_gral_button{
+  height: 4rem;
+  width: 20rem;
+  }
 /******Soft skills********/ 
 .profile_soft_skills{
     display:flex;
