@@ -96,7 +96,7 @@
 font-size: 2.2rem;
 }
 
-/********* Proyectos ********/
+/********* Proyects ********/
 .works{
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ font-size: 2.2rem;
  width: 80%;
  height: 80%; 
 } 
-/****** Proyectos Software****/
+/******  Software Proyects****/
 
  .works_framework_software{
    
@@ -144,7 +144,7 @@ font-size: 2.2rem;
         display:none;
    } 
 
-/****** Proyectos Proyectos****/
+/****** Proyect Proyects****/
 .works_framework_projects{
     display:flex;
     flex-wrap: wrap;
@@ -184,47 +184,21 @@ font-size: 2.2rem;
    
   }
 
-/* .software_proyecto_fig{
-    display: flex;
-   } */
-
-/* .slider-container img{
-      height:20%;
-      }  */
-      
-/* .works_card:hover
- {
-    transition: all 300ms;
-    position: relative;
-    transform: scale(1.05);
-}  */
-
-/*Software 2*/
+/*Software 1*/
  #chbx_software1:checked ~ .proyecto1_desc {
   display: flex; 
   flex-direction: column;
  }
  
 
- /* #chbx_software1:checked ~ .works_framework_software.img {
-  size: 40%;
-
- } */
-/* #chbx_software1:checked ~ .proyecto1_desc{
-  flex: 1 0 auto ;
-
- } */
-/*Software 2*/
+ /*Software 2*/
 #chbx_software2:checked ~ .proyecto2_desc {
   display: flex; 
   flex-direction: column;
  }
  
  
- /* #chbx_software1:checked ~ .works_framework_software.img {
-  size: 40%;
 
- } */
 #chbx_software2:checked ~ .proyecto2_desc{
   flex: 1 0 auto ;
 
@@ -260,9 +234,3 @@ font-size: 2.2rem;
   .about{
       font-size: 1.8rem;
    }
-/* .about_content{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-} */

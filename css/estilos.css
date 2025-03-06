@@ -33,7 +33,7 @@
 ul {
   list-style-position: inside;
 }
-/* Menu Principal*/
+/* Main Menu*/
     
 .profile_nav_ul li{
     display: inline-block;
@@ -45,7 +45,7 @@ ul {
     color:var(--white);
     text-decoration: none;
 }
-/*Contenido Información Gral Perfil*/
+/***** General informatin Profile*****/
 
 .conten_img{
   display: flex;
@@ -91,7 +91,7 @@ ul {
     text-decoration: none;
   }
 
-  /*Habilidades blandas*/
+  /*********Soft skills******/
 
   .skill_card{
     display:flex;
@@ -114,7 +114,6 @@ ul {
 
   .skill_card_icon{
     background-color:var(--gunmetal);
-    /* box-shadow: 0px 5px 25px; */
     border:none;
     border-radius: 50%;
     bottom: 2.4rem;
@@ -186,33 +185,14 @@ ul {
     color:var(--royal-orange);
     margin:1rem 0 1rem 0;
   }
+/****** Hard skills ******/
 .profile_hard_skills{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem;
 }
-/* .hards{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-between;
-  align-items: center;
-  width:70%;
-  margin-top: 3rem;
-}
-.hard_skills{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:50%;
-
-}
-.hd_img{
-  max-width: 90%;
-} */
-
 #hard_comp{
-  
     width: 40%;
 }
 
