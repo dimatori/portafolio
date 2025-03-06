@@ -66,13 +66,7 @@ ul {
   font-size: var(--bg);
 }
 
-.profile_gral_button{
-    border-radius: 4px;
-    cursor:pointer;
-    font-size: var(--md);
-    height: 4rem;
-    width: auto;
-    }
+
     
   .defect{
     background-color: var(--royal-orange);
