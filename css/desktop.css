@@ -24,9 +24,11 @@
         font-weight: 600;
         font-size: 3.2rem;
         }
+
 .img_profile{
         align-self:center;
         max-width: 100%;
+        height: auto;
         margin: 0 0 0 0;
 }
 .profile_gral_button{
@@ -125,17 +127,19 @@ font-size: 2.2rem;
 .works_framework_all{
     display:flex;
     flex-wrap: wrap;
-    justify-content:flex-end;
+    justify-content:flex-start;
+    max-width: 80vw;
     
 }
-.works_framework_all figure{
+.works_framework_all > figure{
   display: flex;
   justify-content: center;
+  width:100%;
 }
 
  .proyectos1{
  width: 80%;
- height: 80%; 
+ height: auto; 
 } 
 /******  Software Proyects****/
 
@@ -145,12 +149,30 @@ font-size: 2.2rem;
    
   }
 
-  .works_framework_courses{
+.works_framework_courses{
         display:flex;
         flex-wrap: wrap;
         justify-content:center;
         display:none;
    } 
+
+.instution-container{
+    height: 15rem;
+   }
+  
+.institution-name{
+    height: 20%;
+    font-size: 2rem;
+    align-content: center;
+  }
+.courses {
+    height:  80%;
+    margin-left: 25%;
+ } 
+.course-list{
+  justify-content: left;
+  font-size: 1.8rem;
+}
 
 /****** Proyect Proyects****/
 .works_framework_projects{
@@ -163,12 +185,12 @@ font-size: 2.2rem;
     display:none;
   
 }
-.works_framework_projects > div{ 
-  margin:1rem;
+.works_framework_projects >div{ 
+  margin: 1rem; 
   border: var(--white) solid 0.2rem;
   border-radius: 0.5rem;
-  width: 65%;
-  height: 100%;
+  width: 60%;
+
 }
 .works_framework_courses >div{
   width: 80%;
